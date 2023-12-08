@@ -21,15 +21,7 @@ Before running the system, ensure you have the following installed:
    Run the command `swipl` to start the Prolog interpreter.
 
 3. **Load the Facts File:**
-   In the Prolog interpreter, load the facts file by running `[movies_prolog_facts].`
-
-## Querying the System
-
-You can query the system using various Prolog rules. Here are some examples:
-
-1. **Find Movies by Genre:**
-   ```prolog
-   movie_by_genre("Adventure", Title).
+   In the Prolog interpreter, load the facts file by running `[movies].` This file contains around 54,000 prolog facts in the format `movies(title, year, [genre1, genre2...], rating, [tag1, tag2...]`. The tags represent various descriptors users entered to describe the movie.
 
 ## Interacting with the Movie Recommendation System
 Once you have loaded the movies.pl file in the SWI-Prolog interpreter, you can interact with the movie recommendation system by following these steps:
