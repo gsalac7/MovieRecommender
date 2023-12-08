@@ -59,6 +59,7 @@ Follow these steps to use the movie recommendation system:
      - If there are still no matches, the rating is lowered by 1 point, and the system searches again.
      - If no matches are found, the system will use the `similar_genre` rule to search based on a similar genre.
 
+**Note**: You can test verify this easily by using the `simple.pl` file. It contains a smaller dataset of movies to test the prolog rules.
 
 ## Sample Output
 ```
@@ -79,7 +80,8 @@ Movies recommended for you:
 Wallace   Gromit  A Close Shave (1995)
 The Saint of Gamblers (1995)
 Prehysteria  3 (1995)
-Dana Carvey  Critics Choi```
+Dana Carvey  Critics Choi
+```
 
 ## Exit the System
 To exit the Prolog interpreter, type halt. and press Enter.
