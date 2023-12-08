@@ -52,7 +52,7 @@ Follow these steps to use the movie recommendation system:
      - If no matches are found, the system will use the `similar_genre` rule to search based on a similar genre.
 
 **Note**: You can test verify this easily by using the `simple.pl` file. It contains a smaller dataset of movies to test the prolog rules.
-#### Available Genres
+## Available Genres
 
 The movie recommendation system supports a variety of genres. Below is a list of all the genres you can choose from:
 
