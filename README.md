@@ -30,3 +30,42 @@ You can query the system using various Prolog rules. Here are some examples:
 1. **Find Movies by Genre:**
    ```prolog
    movie_by_genre("Adventure", Title).
+
+## Interacting with the Movie Recommendation System
+Once you have loaded the movies.pl file in the SWI-Prolog interpreter, you can interact with the movie recommendation system by following these steps:
+
+### Start the Recommendation Process
+1. **Run the command start. in the Prolog interpreter.**
+This will initiate the movie recommendation process.
+2. Enter Your Preferences
+3. The system will prompt you for your preferences in the following order:
+**Genre**: Type the genre you are interested in within double quotes. For example, "Comedy". If you have no preference, type 'any'.
+**Year**: Enter the year of the movies you are interested in. For any year, type 'any'.
+**Minimum Rating**: Enter the minimum rating (from 1 to 5) you are looking for. For any rating, type 'any'.
+**Tags**: Type a specific tag within double quotes, like "family". If you have no preference or the tag does not match, type 'none'.
+4. After entering your preferences, the system will display a list of recommended movies based on your input.
+5. If the system adjusts the criteria (like lowering the rating or changing the genre), it will notify you of these changes.
+
+### Sample Output
+```
+?- [movies].
+true.
+
+?- start.
+What genre are you interested in? (Type 'any' for no preference)
+|: "Comedy".
+What year are you interested in? (Type 'any' for no preference)
+|: 1995.
+What minimum rating are you looking for? (Type 'any' for no preference)
+|: 5.
+Any specific tags you're interested in? (Type 'none' for no preference)
+|: none.
+Adjusting rating criteria to find matches...
+Movies recommended for you: 
+Wallace   Gromit  A Close Shave (1995)
+The Saint of Gamblers (1995)
+Prehysteria  3 (1995)
+Dana Carvey  Critics Choi
+```
+## Exit the System
+To exit the Prolog interpreter, type halt. and press Enter.
