@@ -52,8 +52,29 @@ Follow these steps to use the movie recommendation system:
      - If no matches are found, the system will use the `similar_genre` rule to search based on a similar genre.
 
 **Note**: You can test verify this easily by using the `simple.pl` file. It contains a smaller dataset of movies to test the prolog rules.
+#### Available Genres
+
+- The movie recommendation system supports a variety of genres. Below is a list of all the genres you can choose from:
+
+Adventure
+Comedy
+Drama
+Crime
+Thriller
+Horror
+Mystery
+Action
+War
+Documentary
+Sci-Fi
+Children
+Western
+Fantasy
+Romance
+IMAX
 
 ## Sample Output
+**Adjusting the rating to find movies**
 ```
 ?- [movies].
 true.
@@ -73,6 +94,32 @@ Wallace   Gromit  A Close Shave (1995)
 The Saint of Gamblers (1995)
 Prehysteria  3 (1995)
 Dana Carvey  Critics Choi
+```
+
+**Removing the tags to find movies**
+```
+?- [movies].
+true.
+
+?- start.
+What genre are you interested in? (Type 'any' for no preference)
+|: "Thriller".
+What year are you interested in? (Type 'any' for no preference)
+|: 1976.
+What minimum rating are you looking for? (Type 'any' for no preference)
+|: 4.
+Any specific tags you're interested in? (Type 'none' for no preference)
+|: "Guns".
+No movies found with the specified tag. Trying without the tag...
+Movies recommended for you: 
+Taxi Driver (1976)
+All the Presidents Men (1976)
+Shoot (1976)
+true .
+```
+
+**Find movies in a similar genre to find matches**
+```
 ```
 
 ## Exit the System
