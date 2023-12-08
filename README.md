@@ -34,19 +34,33 @@ You can query the system using various Prolog rules. Here are some examples:
 ## Interacting with the Movie Recommendation System
 Once you have loaded the movies.pl file in the SWI-Prolog interpreter, you can interact with the movie recommendation system by following these steps:
 
-### Start the Recommendation Process
-1. **Run the command start. in the Prolog interpreter.**
-This will initiate the movie recommendation process.
-2. Enter Your Preferences
-3. The system will prompt you for your preferences in the following order:
-**Genre**: Type the genre you are interested in within double quotes. For example, "Comedy". If you have no preference, type 'any'.
-**Year**: Enter the year of the movies you are interested in. For any year, type 'any'.
-**Minimum Rating**: Enter the minimum rating (from 1 to 5) you are looking for. For any rating, type 'any'.
-**Tags**: Type a specific tag within double quotes, like "family". If you have no preference or the tag does not match, type 'none'.
-4. After entering your preferences, the system will display a list of recommended movies based on your input.
-5. If the system adjusts the criteria (like lowering the rating or changing the genre), it will notify you of these changes.
+## Start the Recommendation Process
 
-### Sample Output
+Follow these steps to use the movie recommendation system:
+
+1. **Initiate the Process**
+   - Run the command `start.` in the Prolog interpreter to begin.
+
+2. **Enter Your Preferences**
+   - The system will ask for your preferences in the following order:
+
+     - **Genre**: Type the genre you are interested in within double quotes (e.g., `"Comedy"`). Type `'any'` for no preference.
+     - **Year**: Enter the desired year (e.g., `1995`). Type `'any'` for any year.
+     - **Minimum Rating**: Enter the minimum rating (1 to 5). Type `'any'` for any rating.
+     - **Tags**: Type a specific tag within double quotes (e.g., `"family"`). Type `'none'` for no preference or if the tag does not match.
+
+3. **View Recommendations**
+   - The system will display a list of recommended movies based on your input.
+
+4. **Adjustments and Notifications**
+   - If the system adjusts the criteria (like lowering the rating or changing the genre), it will notify you of these changes.
+   - Adjustments are made as follows:
+     - If no tags match, the system will search again without the tags.
+     - If there are still no matches, the rating is lowered by 1 point, and the system searches again.
+     - If no matches are found, the system will use the `similar_genre` rule to search based on a similar genre.
+
+
+## Sample Output
 ```
 ?- [movies].
 true.
@@ -65,7 +79,7 @@ Movies recommended for you:
 Wallace   Gromit  A Close Shave (1995)
 The Saint of Gamblers (1995)
 Prehysteria  3 (1995)
-Dana Carvey  Critics Choi
-```
+Dana Carvey  Critics Choi```
+
 ## Exit the System
 To exit the Prolog interpreter, type halt. and press Enter.
