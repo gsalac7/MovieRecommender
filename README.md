@@ -54,24 +54,27 @@ Follow these steps to use the movie recommendation system:
 **Note**: You can test verify this easily by using the `simple.pl` file. It contains a smaller dataset of movies to test the prolog rules.
 #### Available Genres
 
-- The movie recommendation system supports a variety of genres. Below is a list of all the genres you can choose from:
+The movie recommendation system supports a variety of genres. Below is a list of all the genres you can choose from:
 
-Adventure
-Comedy
-Drama
-Crime
-Thriller
-Horror
-Mystery
-Action
-War
-Documentary
-Sci-Fi
-Children
-Western
-Fantasy
-Romance
-IMAX
+* Adventure
+* Comedy
+* Drama
+* Crime
+* Thriller
+* Horror
+* Mystery
+* Action
+* War
+* Documentary
+* Sci-Fi
+* Children
+* Western
+* Fantasy
+* Romance
+* IMAX
+
+When using the system, you can specify your preferred genre from this list. Remember to enclose the genre in double quotes (e.g., "Comedy") when entering your preference.
+Tags must be enclosed in double quotes as well. Tags are just small descriptions of the movies such as "Suspense", "Space", "Cyberpunk", etc. There are way too many tags to list here so just be creative when what you want to search for.
 
 ## Sample Output
 **Adjusting the rating to find movies**
