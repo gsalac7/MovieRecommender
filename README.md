@@ -121,9 +121,6 @@ Shoot (1976)
 true .
 ```
 
-**Find movies in a similar genre to find matches**
-```
-```
 
 ## Exit the System
 To exit the Prolog interpreter, type halt. and press Enter.
