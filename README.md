@@ -1,8 +1,8 @@
 # Movie Recommendation System
 **CPSC 583** 
-### Angelo Salac
-### Kevin Huang
-### Nathan Nguyen 
+**Angelo Salac**
+**Kevin Huang**
+**Nathan Nguyen**
 
 This README provides instructions on how to set up and run the Movie Recommendation System on a Windows environment. This system is built using Prolog and utilizes a dataset of movies, their genres, tags, and ratings to provide movie recommendations.
 
