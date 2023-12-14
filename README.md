@@ -19,6 +19,14 @@ Before running the system, ensure you have the following installed:
 1. **Clone or Download the Repository:**
    Ensure that you have the Prolog files in your working directory.
 
+### Setting up the prolog facts
+
+We have created a python script `convert.py`, to retrieve the data from the datasets and create the prolog file `movies.pl`
+
+In order to run the script, move all the csv files to the same directory as the `convert.py` script and execute using `python convert.py`. This will create a `movies.pl` file.
+
+This repository already has the `movies.pl` file with the prolog facts taken from the dataset, and the prolog rules used to recommend moveis to the user
+
 ## Running the System
 
 1. **Open Command Prompt:**
