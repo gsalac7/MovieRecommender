@@ -1,5 +1,5 @@
 # Movie Recommendation System
-### CPSC 583 
+**CPSC 583** 
 ### Angelo Salac
 ### Kevin Huang
 ### Nathan Nguyen 
