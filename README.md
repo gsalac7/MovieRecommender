@@ -25,7 +25,7 @@ Before running the system, ensure you have the following installed:
 
 2. In order to run the script, move all the csv files to the same directory as the `convert.py` script and execute using `python convert.py`. This will create a `movies.pl` file.
 
-3. This repository already has the `movies.pl` file with the prolog facts taken from the dataset, and the prolog rules used to recommend moveis to the user
+3. This repository already has the `movies.pl` file with the prolog facts taken from the dataset, and the prolog rules used to recommend movies to the user
 
 ## Running the System
 
